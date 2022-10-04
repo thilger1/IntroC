@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int quarters, dimes, nickels, pennies;
+	cout << "Please enter the number of coins" << endl;
+	cout << "Number of quarters: ";
+	cin >> quarters;
+	cout << endl << "Number of dimes: ";
+	cin >> dimes;
+	cout << endl << "Number of nickels: ";
+	cin >> nickels;
+	cout << endl << "Number of pennies: ";
+	cin >> pennies;
+	
+	double total = quarters * 0.25 + dimes * 0.10 + nickels * 0.05 + pennies + 0.01;
+	int dollars = total / 1;
+	double cents = total - dollars;
+	cout << dollars << " dollars and " << cents << " cents!";
+	return 0;
+}
