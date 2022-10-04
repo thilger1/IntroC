@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int one, two, three, four;
+	cout << "Please enter 4 positive integers, separated by a space" << endl;
+	cin >> one >> two >> three >> four;
+	int odd = 0;
+	int even = 0;
+
+	if (one % 2 == 0) {
+		even += 1;
+	}
+	else
+		odd += 1;
+	if (two % 2 == 0) {
+		even += 1;
+	}
+	else
+		odd += 1;
+	if (three % 2 == 0) {
+		even += 1;
+	}
+	else
+		odd += 1;
+	if (four % 2 == 0) {
+		even += 1;
+	}
+	else
+		odd += 1;
+	if (odd > even)
+		cout << endl << "More odd";
+	if (even > odd)
+		cout << endl << "More even";
+	else
+		cout << endl << "Same number of evens and odds";
+	return 0;
+}
