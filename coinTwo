@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int dollars;
+	int cents;
+	cout << "How many dollars?: ";
+	cin >> dollars;
+	cout << endl << "How much cents?: ";
+	cin >> cents;
+
+	int quarters = dollars * 4;
+	int dimes = 0;
+	int nickels = 0;
+	int pennies = 0;
+	while (25 <= cents) {
+		quarters++;
+		cents = cents - 25;
+	}
+	while (10 <= cents) {
+		dimes++;
+		cents = cents - 10;
+	}
+	while (5 <= cents) {
+		nickels++;
+		cents = cents - 5;
+	}
+	while (1 <= cents) {
+		pennies++;
+		cents = cents - 1;
+	}
+
+	cout << "Your total is: " << quarters << " quarters, " << dimes << " dimes, " << nickels << " nickels, " << pennies << " pennies.";
+	return 0;
+
+}
