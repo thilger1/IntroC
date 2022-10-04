@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	float height;
+	float weight;
+
+	cout << "Please enter height in inches: ";
+	cin >> height;
+	cout << endl << "Please enter weight in pounds: ";
+	cin >> weight;
+	
+	weight = weight * 0.453592;
+	height = height * 0.0254;
+
+	float bmi = weight / (height * height);
+	cout << endl << "Your bmi is: " << bmi;
+}
