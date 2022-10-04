@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int n;
+  int i = 0;
+  int prevfib, fib, newfib;
+  cout<<"Enter a number greater than 1: ";
+  cin>>n;
+  fib = 1;
+  prevfib = 0;
+  cout<<fib<<endl;
+  for(i = 0; i < n; i++){
+    newfib = fib + prevfib;
+    cout << newfib << endl;
+    prevfib = fib;
+    fib = newfib;
+  }
+}
