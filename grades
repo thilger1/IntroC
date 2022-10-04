@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int gradeOne, gradeTwo;
+	cout << "Input two grades seperated by a space" << endl;
+	cin >> gradeOne >> gradeTwo;
+	
+	if (gradeOne < 60) {
+		if (gradeTwo < 60) {
+			cout << "Student Failed :(" << endl;
+			return 0;
+		}
+		else {
+			cout << "Student Graduated with Honoros :)" << endl;
+			return 0;
+		}
+	}
+	if (gradeOne > 94) {
+		if (gradeTwo > 94) {
+			cout << "Student graduated with Honoros :)" << endl;
+			return 0;
+		}
+		else {
+			cout << "Student Graduated!" << endl;
+			return 0;
+		}
+	}
+	else {
+		cout << "No data" << endl;
+	}
+}
